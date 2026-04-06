@@ -9,7 +9,7 @@ export default function Register() {
     const [password_confirmation, setPassword_confirmation] = useState("");
     const navigate = useNavigate();
 
-    const handleregister = async () => {
+    const handleRegister = async () => {
         try {
             const response = await api.post('/register', {
                 name: name,
@@ -86,7 +86,7 @@ export default function Register() {
                 </div>
 
                 <button
-                    onClick={handleregister}
+                    onClick={handleRegister}
                     className="mt-10 bg-[#00C950] hover:bg-[#00b347] text-white text-lg font-bold py-4 rounded-2xl transition-all shadow-lg shadow-[#00C950]/30 active:scale-[0.98]">
                     Crear una cuenta
                 </button>
